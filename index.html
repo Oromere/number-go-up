@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Number go up!</title>
+        <meta name="description" content="Fun idle game" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>Number go up!</h1>
+
+        <div id="counter">0</div>
+        <button id="plusBtn">GO UP!</button>
+
+        <!-- passive upgrade-->
+        <div>
+            <label>Upgrade passive income:</label>
+            <div id="upgradePassivePrice"></div>
+            <button id="upgradePassiveBtn">UPGRADE</button>
+        </div>
+
+        <!-- active upgrade-->
+        <div>
+            <label>Upgrade active income:</label>
+            <button id="upgradeActiveBtn">UPGRADE</button>
+            <div id="upgradeActivePrice"></div>
+        </div>
+
+        <button id="supriseBtn">Buy a calculated suprise</button>
+
+        <!--  Calculated suprise modal -->
+        <div id="supriseModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <input>
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
