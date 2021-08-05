@@ -9,37 +9,53 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./src/style.scss" />
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Number go up!</h1>
+        <div class="grid-wrapper">
+            <h1>Number go up!</h1>
 
-        <div id="counter">0</div>
-        <button id="plusBtn">GO UP!</button>
+            <div class="counter-wrapper">
+                <div id="count">0</div>
+                <button id="plusBtn">GO UP!</button>
+            </div>
 
-        <!-- passive upgrade-->
-        <div>
-            <label>Upgrade passive income:</label>
-            <div id="upgradePassivePrice"></div>
-            <button id="upgradePassiveBtn">UPGRADE</button>
+            <div class="upgrade-wrapper">
+                <h3>Upgrades </h3>
+                <!-- passive upgrade -->
+                <div class="upgrade">
+                    <button id="upgradePassiveBtn" class="btn-sep icon-up">Passive</button>
+                    <div id="upgradePassivePrice"></div>
+                    <div id="currentPassiveIncome"></div>
+                </div>
+
+                <!-- active upgrade -->
+                <div class="upgrade">
+                    <button id="upgradeActiveBtn" class="btn-sep icon-up">Active</button>
+                    <div id="upgradeActivePrice"></div>
+                    <div id="currentActiveIncome"></div>
+                </div>
+            </div>
+
+            <div class="suprise-wrapper">
+                <button id="supriseBtn">Buy a calculated suprise</button>
+            </div>
+
         </div>
-
-        <!-- active upgrade-->
-        <div>
-            <label>Upgrade active income:</label>
-            <button id="upgradeActiveBtn">UPGRADE</button>
-            <div id="upgradeActivePrice"></div>
-        </div>
-
-        <button id="supriseBtn">Buy a calculated suprise</button>
 
         <!--  Calculated suprise modal -->
         <div id="supriseModal" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <input>
                 <p>Some text in the Modal..</p>
+                <form>
+                    <label>Bet</label>
+                    <input id="supriseInput" type="number" min="1" required/>
+                    <button id="supriseSubmit" type="submit">Calculate</button>
+                </form>
+                <div id="supriseWin"></div>
             </div>
         </div>
 

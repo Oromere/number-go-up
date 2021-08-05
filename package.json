@@ -1,0 +1,25 @@
+{
+  "name": "number-go-up",
+  "version": "0.0.1",
+  "description": "A very simple idle game.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oromere/number-go-up.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oromere/number-go-up/issues"
+  },
+  "homepage": "https://github.com/Oromere/number-go-up#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.35.2"
+  }
+}
