@@ -1,8 +1,8 @@
 import main from './src/main';
-import suprise from './src/suprise';
+import surprise from './src/surprise';
 import Counter from './src/Counter';
 
 const counter = new Counter();
 
 main(counter);
-suprise(counter);
+surprise(counter);

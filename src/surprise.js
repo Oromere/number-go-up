@@ -10,21 +10,21 @@ function randomExponential(lambda) {
 }
 
 // get all relevant elements
-const supriseModal = document.getElementById("supriseModal");
-const supriseModalButton = document.getElementById("supriseBtn");
+const surpriseModal = document.getElementById("surpriseModal");
+const surpriseModalButton = document.getElementById("surpriseBtn");
 const modalClose = document.getElementsByClassName("close")[0];
-const submit = document.querySelector("#supriseSubmit");
-const input = document.querySelector("#supriseInput");
-const winLabel = document.querySelector("#supriseWin");
+const submit = document.querySelector("#surpriseSubmit");
+const input = document.querySelector("#surpriseInput");
+const winLabel = document.querySelector("#surpriseWin");
 
 // open the modal
-supriseModalButton.onclick = function () {
-    supriseModal.style.display = "block";
+surpriseModalButton.onclick = function () {
+    surpriseModal.style.display = "block";
 };
 
 // close the modal
 modalClose.onclick = function () {
-    supriseModal.style.display = "none";
+    surpriseModal.style.display = "none";
 };
 
 // submit handler
@@ -45,8 +45,8 @@ submit.onclick = function (event) {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-    if (event.target == supriseModal) {
-        supriseModal.style.display = "none";
+    if (event.target == surpriseModal) {
+        surpriseModal.style.display = "none";
     }
 };
 

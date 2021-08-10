@@ -25,37 +25,38 @@
                 <h3>Upgrades </h3>
                 <!-- passive upgrade -->
                 <div class="upgrade">
-                    <button id="upgradePassiveBtn" class="btn-sep icon-up">Passive</button>
+                    <button id="upgradePassiveBtn" class="btn-sep icon-up" title="Upgrade the passive growth">FASTER</button>
+                    <div></div>
                     <div id="upgradePassivePrice"></div>
                     <div id="currentPassiveIncome"></div>
                 </div>
 
                 <!-- active upgrade -->
                 <div class="upgrade">
-                    <button id="upgradeActiveBtn" class="btn-sep icon-up">Active</button>
+                    <button id="upgradeActiveBtn" class="btn-sep icon-up" title="Upgrade the active growth">BIGGER</button>
                     <div id="upgradeActivePrice"></div>
                     <div id="currentActiveIncome"></div>
                 </div>
             </div>
 
-            <div class="suprise-wrapper">
-                <button id="supriseBtn">Buy a calculated suprise</button>
+            <div class="surprise-wrapper">
+                <button id="surpriseBtn">Buy a calculated surprise</button>
             </div>
 
         </div>
 
         <!--  Calculated suprise modal -->
-        <div id="supriseModal" class="modal">
+        <div id="surpriseModal" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
+                <p>Buy a surprise and maybe multiply your bet!</p>
                 <form>
                     <label>Bet</label>
-                    <input id="supriseInput" type="number" min="1" required/>
-                    <button id="supriseSubmit" type="submit">Calculate</button>
+                    <input id="surpriseInput" type="number" min="1" required/>
+                    <button id="surpriseSubmit" type="submit">Calculate</button>
                 </form>
-                <div id="supriseWin"></div>
+                <div id="surpriseWin"></div>
             </div>
         </div>
 
