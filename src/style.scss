@@ -1,6 +1,6 @@
 @import "./grid.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 
 $baby-blue: #f8faff;
 
@@ -9,7 +9,7 @@ body {
     height: 100%; /* Full height */
     margin: 0;
     font-size: 16px;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: "Share Tech Mono", monospace;
     text-align: center;
     background-color: $baby-blue;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 button {
-    font-family : inherit;
+    font-family: inherit;
     font-size: 1em;
     background-color: white;
     border: 0px;
@@ -40,7 +40,7 @@ button {
     }
 }
 
-#plusBtn{
+#plusBtn {
     margin-top: 2rem;
     font-size: 2rem;
     border-bottom: 4px solid lighten(gray, 70%);
@@ -85,8 +85,64 @@ button {
     }
 }
 
-/* Upgrade */
+form {
+    width: 15em;
+    margin: auto;
 
+    button {
+        margin-top: 1em;
+    }
+}
+
+#surpriseWin {
+    margin-top: 1em;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Input */
+input[type="number"] {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
+
+    font-family: inherit;
+    font-size: 90%;
+
+    box-sizing: border-box;
+}
+
+input:invalid {
+    border-color: #900;
+    background-color: #fdd;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+/* Error message */
+.error {
+    display: block;
+    width: 100%;
+    padding: 0;
+
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+/* Upgrade */
 .upgrade {
     display: inline-block;
     width: 220px;

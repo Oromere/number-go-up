@@ -26,7 +26,6 @@
                 <!-- passive upgrade -->
                 <div class="upgrade">
                     <button id="upgradePassiveBtn" class="btn-sep icon-up" title="Upgrade the passive growth">FASTER</button>
-                    <div></div>
                     <div id="upgradePassivePrice"></div>
                     <div id="currentPassiveIncome"></div>
                 </div>
@@ -51,10 +50,13 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <p>Buy a surprise and maybe multiply your bet!</p>
-                <form>
-                    <label>Bet</label>
-                    <input id="surpriseInput" type="number" min="1" required/>
-                    <button id="surpriseSubmit" type="submit">Calculate</button>
+                <form novalidate>
+                    <label for="bet">
+                        <span>Bet</span>
+                        <input id="bet" type="number" name="bet" value="1" min="1" required/>
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+                    <button type="submit">Calculate</button>
                 </form>
                 <div id="surpriseWin"></div>
             </div>
